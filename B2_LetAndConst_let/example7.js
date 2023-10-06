@@ -12,7 +12,3 @@ switch (firstname) {
             break;
         }
 }
-
-for (let person of person.firstnames) { 
-     console.log(person); 
- }
