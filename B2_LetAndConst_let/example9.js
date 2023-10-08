@@ -5,7 +5,7 @@ for (person of person.firstnames) {
 }
 console.log(person);
 
-// OUTPUT
+// OUTPUT:
 //Tony
 //Anthony
 //Anthony
