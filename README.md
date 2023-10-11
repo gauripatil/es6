@@ -1,11 +1,11 @@
 # es6 concepts
 
-# Block Scoping
+## Block Scoping
 Variable scope is defined lexically by a block. In Javascript`s case, curly braces.
 
 
-# Execution Context
-## Variables declared with var
+## Execution Context
+### Variables declared with var
 ![Screen Shot 2023-10-01 at 11 58 45 PM](https://github.com/gauripatil/es6/assets/3206551/419e415f-05c0-4b5b-bbd9-747715a9c65f)
 
 We already know that there is a variable environment that stores the variables declared with the var keyword.
@@ -21,7 +21,7 @@ Thus it is not blocked scoped.
 If we want a variable to be scoped to the block, we need to get it into the lexical environment that
 corresponds to the block we've written. To do that, we need to use one of two new keywords, let and const.
 
-## Variables declared with let
+### Variables declared with let
 We've already seen that the VAR keyword declares a variable and puts that variable and value in the variable environment of the execution context. If I then reference that variable somewhere else in the code, it can be found. But how do we get a variable into one of the lexical environments? We can do that with one of two ways. We declare a variable using the **let** keyword, or, as we'll later see, we can declare a variable using the **const** keyword. If I declare a variable using let like let my var equal one, then the variable is stored in the corresponding lexical environment according to where the variable is declared lexical. In this case, I declare my variable at the root of the function or the main file, and so it gets stored in the outermost lexical environment.
 
 Example 1
@@ -42,3 +42,15 @@ But what if we moved the declaration? Let's suppose the declaration was inside t
 
 So what happens?
 Well, notice this is different from what happens if you declare a variable var y. Well, for starters, during the execution phase yes this will receive a value. But before that line is actually executed like here with console.log. There is no value there. So if my var had been declared with the var keyword, we'd just get undefined because of the hoisting, but because of the structure of lexical environments. This works differently. The engine looks for my var in the corresponding lexical environment. Can't find it and so goes up, not down. And it doesn't find anything there either. So even though my var was hoisted, the effects are quite different because the engine knows that the variable was not declared within the same block or above. And so we get an error.
+
+
+### Binding
+
+![Screen Shot 2023-10-11 at 11 29 38 PM](https://github.com/gauripatil/es6/assets/3206551/cf38c1a2-c515-47b2-9502-6ce5379bc47d)
+![Screen Shot 2023-10-11 at 11 25 59 PM](https://github.com/gauripatil/es6/assets/3206551/ee721aac-a82f-4fa0-8a71-64ca9835ab1a)
+
+I'm creating a binding. I have a name. And I have a value. But really. That value is sitting somewhere in the computer's memory. It's a value in a memory location. So I could also think of it as an address to a memory location. And that memory location contains a value. And so when I reference the name, the engine goes and finds the referenced memory location and gives me the value found in that memory location. The connection, the pointer between the name and the memory location. That's a binding.
+
+A binding.
+The connection or pointer between a variable name and a specific location in the computer's memory that holds a value. A binding is a thing. It's the connection between the variable name and the value that it represents.
+
