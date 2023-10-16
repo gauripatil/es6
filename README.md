@@ -54,3 +54,6 @@ I'm creating a binding. I have a name. And I have a value. But really. That valu
 A binding.
 The connection or pointer between a variable name and a specific location in the computer's memory that holds a value. A binding is a thing. It's the connection between the variable name and the value that it represents.
 
+## Classes
+![Screen Shot 2023-10-16 at 8 46 49 PM](https://github.com/gauripatil/es6/assets/3206551/cd5fc05d-b37d-47bc-8136-74a1e4f65365)
+![Screen Shot 2023-10-16 at 8 45 37 PM](https://github.com/gauripatil/es6/assets/3206551/1d5427ed-ed9d-4ea4-9a80-73f07d68fdc9)
