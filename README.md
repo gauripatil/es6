@@ -54,3 +54,28 @@ I'm creating a binding. I have a name. And I have a value. But really. That valu
 A binding.
 The connection or pointer between a variable name and a specific location in the computer's memory that holds a value. A binding is a thing. It's the connection between the variable name and the value that it represents.
 
+## Classes
+![Screen Shot 2023-10-16 at 8 45 37 PM](https://github.com/gauripatil/es6/assets/3206551/1d5427ed-ed9d-4ea4-9a80-73f07d68fdc9)
+
+A class in its most generic form is a structure in a programming language that provides a way to create objects. That's really its purpose, primarily.
+
+However, classes in JavaScript, as we've said, are different from classes in other languages. Classes in other languages like C-sharp or Java are very fundamental structures under the hood of those engines, of those compilers. Classes exist not just to create new objects, but to create new types. Sort of like we have arrays and numbers in JavaScript. Classes in other languages let you create new types of things.
+
+**In JavaScript, however, classes don't create new types. They're just a way of creating objects and the prototype chain. They're just syntactic sugar.**
+
+## Syntactic Sugar
+![Screen Shot 2023-10-16 at 8 46 49 PM](https://github.com/gauripatil/es6/assets/3206551/cd5fc05d-b37d-47bc-8136-74a1e4f65365)
+
+Syntactic sugar means a different way to accomplish something in a programming language that doesn't actually introduce anything new under the hood. And that, for the most part, is classes. They allow us a different way to type the write how we want to create objects in the prototype chain. But under the hood of the JavaScript engine, there's nothing really new going on.
+**In fact, classes in JavaScript are just functions.**
+
+![Screen Shot 2023-10-17 at 10 02 16 PM](https://github.com/gauripatil/es6/assets/3206551/06d020f4-c6fd-4693-b9c3-9d09fe4aa8d9)
+![Screen Shot 2023-10-17 at 10 02 06 PM](https://github.com/gauripatil/es6/assets/3206551/05c7fb16-4d37-44e6-ada1-24206b9ebed9)
+
+There is no class object under the hood. There's nothing under the hood of the JavaScript engine that's saying this is a class. No, it's a function.
+When you create a class, you're creating a function object.
+With one small difference.
+What you should be imagining when you see a class being created is that under the hood you're actually creating a function, a function object, and inside the engine, because the parser sees the word class, not function, it will add a special value to the function object. It will mark the function object **as a class constructor.**
+Now, this isn't a property that you can access or change. It's an under the hood property.
+But it's that property that allows the JavaScript engine to then make different choices based on what you're typing inside the curly braces of a class to have certain restrictions and to allow certain ways of typing things that it wouldn't otherwise allow.
+
