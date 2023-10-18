@@ -79,3 +79,8 @@ What you should be imagining when you see a class being created is that under th
 Now, this isn't a property that you can access or change. It's an under the hood property.
 But it's that property that allows the JavaScript engine to then make different choices based on what you're typing inside the curly braces of a class to have certain restrictions and to allow certain ways of typing things that it wouldn't otherwise allow.
 
+## Instance
+**The actual object is created from an object creation feature of the language like a class. So when I create an object using the class syntax, I can say that the object is an instance of that class.**
+
+In JavaScript, we're really just saying, how did we create the object? We created this object using this object creation feature. So it's now an instance of that object creation feature. And of course, using a class or other creation method, I can create various instances, various separate objects with the same structure.
+
