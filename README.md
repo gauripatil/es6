@@ -79,9 +79,21 @@ What you should be imagining when you see a class being created is that under th
 Now, this isn't a property that you can access or change. It's an under the hood property.
 But it's that property that allows the JavaScript engine to then make different choices based on what you're typing inside the curly braces of a class to have certain restrictions and to allow certain ways of typing things that it wouldn't otherwise allow.
 
-## Instance
+
+## Public Instance Fields
+
+### Instance
 ![Screen Shot 2023-10-18 at 9 46 43 PM](https://github.com/gauripatil/es6/assets/3206551/c8893329-522d-4891-8581-d96465b7717a)
 **The actual object is created from an object creation feature of the language like a class. So when I create an object using the class syntax, I can say that the object is an instance of that class.**
 
 In JavaScript, we're really just saying, how did we create the object? We created this object using this object creation feature. So it's now an instance of that object creation feature. And of course, using a class or other creation method, I can create various instances, various separate objects with the same structure.
+
+### Public
+![Screen Shot 2023-10-19 at 8 18 12 PM](https://github.com/gauripatil/es6/assets/3206551/a4adebbb-4f64-40db-9ad1-9276e4b7bcdd)
+
+By public we mean name-value pairs within the object like methods and properties that are directly accessible to both code written inside the object. Methods on the object that is, and code written outside the object. For example, using the dot operator, if I can say object dot and then a property that property is public. It's available outside the object to use and often to change.
+
+### Fields
+![Screen Shot 2023-10-19 at 8 19 55 PM](https://github.com/gauripatil/es6/assets/3206551/b936626c-7ccf-4fa7-9bc7-5f8ef0622a46)
+A property in JavaScript generally refers to something that's public, but as we'll see later in ES6 and beyond. Properties don't have to be public. So we refer to the idea of a name-value pair that is part of an object generically as a field. For the most part, field and property are almost interchangeable names. Field is a bit more generic and can be both public or not public, which we'll see later.
 
