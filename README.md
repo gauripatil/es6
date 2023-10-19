@@ -80,6 +80,7 @@ Now, this isn't a property that you can access or change. It's an under the hood
 But it's that property that allows the JavaScript engine to then make different choices based on what you're typing inside the curly braces of a class to have certain restrictions and to allow certain ways of typing things that it wouldn't otherwise allow.
 
 ## Instance
+![Screen Shot 2023-10-18 at 9 46 43 PM](https://github.com/gauripatil/es6/assets/3206551/c8893329-522d-4891-8581-d96465b7717a)
 **The actual object is created from an object creation feature of the language like a class. So when I create an object using the class syntax, I can say that the object is an instance of that class.**
 
 In JavaScript, we're really just saying, how did we create the object? We created this object using this object creation feature. So it's now an instance of that object creation feature. And of course, using a class or other creation method, I can create various instances, various separate objects with the same structure.
