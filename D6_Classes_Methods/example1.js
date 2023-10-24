@@ -74,4 +74,5 @@ own copy.
 And when it sees a method, it adds it to the prototype on the class object, which will be the prototype
 
 on the chain of any created instances.
+
  */
