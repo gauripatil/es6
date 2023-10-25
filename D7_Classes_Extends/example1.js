@@ -38,3 +38,11 @@ class myNumber extends Number {
 let num = new myNumber(3.053);
 console.log(num.toFixed(1));
 console.log(num.addOne());
+
+
+/**
+ * So what's actually happening when I say that my class extends another class? Well, we're extending the prototype chain.
+ * The prototype of the object should be equal to the prototype property of the class the object was created on.
+ * The fact that the word prototype is the name of the property and be confusing even when we're talking about it.
+ * The prototype of Tony is person.
+ */

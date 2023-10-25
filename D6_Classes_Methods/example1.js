@@ -17,7 +17,14 @@ console.log(me.greet());
 console.log(me2.greet());
 console.log(me.__proto__);
 console.log(me);
-
+// OUPUT
+/**
+ * 
+    Hello, Tony
+    Hello, Anthony
+    {constructor: ƒ, greet: ƒ}
+    Person {firstName: 'Tony'}
+ */
 /**
  * Adding methods that is functions to your objects with the new class syntax is also straightforward.
 
