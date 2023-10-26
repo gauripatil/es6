@@ -97,3 +97,6 @@ By public we mean name-value pairs within the object like methods and properties
 ![Screen Shot 2023-10-19 at 8 19 55 PM](https://github.com/gauripatil/es6/assets/3206551/b936626c-7ccf-4fa7-9bc7-5f8ef0622a46)
 A property in JavaScript generally refers to something that's public, but as we'll see later in ES6 and beyond. Properties don't have to be public. So we refer to the idea of a name-value pair that is part of an object generically as a field. For the most part, field and property are almost interchangeable names. Field is a bit more generic and can be both public or not public, which we'll see later.
 
+
+### Extends & Prototypal inheritence
+![Screen Shot 2023-10-25 at 11 12 11 PM](https://github.com/gauripatil/es6/assets/3206551/10e30715-1a31-4342-8425-522de105b1dd)
